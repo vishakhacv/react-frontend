@@ -38,10 +38,6 @@ php artisan migrate --seed
 php artisan serve
 ```
 
-### Test credentials
-- **Admin**: admin@example.com / password123
-- **Member**: user@example.com / password
-
 ## 3. Django Microservice (port 8001)
 
 ```bash
