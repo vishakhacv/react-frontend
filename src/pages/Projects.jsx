@@ -169,8 +169,7 @@ export default function Projects() {
 
   return (
     <div>
-      <p>{JSON.stringify(isAdmin)}</p>
-<p>{JSON.stringify(user)}</p>
+    
       <div style={styles.header}>
         <h1 style={styles.title}>Projects</h1>
         {/* {isAdmin && ( */}
