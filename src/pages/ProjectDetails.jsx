@@ -122,6 +122,7 @@ export default function ProjectDetails() {
       <div style={styles.header}>
         <h1 style={styles.title}>{project.name}</h1>
         <div style={styles.actions}>
+
           {isAdmin && (
             <>
               <Link to={`/projects/${id}/create-task`}>

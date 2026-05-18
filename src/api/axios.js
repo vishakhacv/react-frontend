@@ -32,7 +32,7 @@ api.interceptors.response.use(
 
 // Django microservice client
 export const djangoApi = axios.create({
-  baseURL: 'http://localhost:8001/api',
+  baseURL: 'https://django-service-ednt.onrender.com',
   headers: {
     'Content-Type': 'application/json',
     'Accept': 'application/json',

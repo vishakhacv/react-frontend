@@ -129,7 +129,8 @@ const styles = {
 };
 
 export default function Projects() {
-  const { isAdmin } = useAuth();
+  const { isAdmin, user } = useAuth();
+
   const [projects, setProjects] = useState([]);
   const [loading, setLoading] = useState(true);
   const [showModal, setShowModal] = useState(false);
@@ -168,13 +169,15 @@ export default function Projects() {
 
   return (
     <div>
+      <p>{JSON.stringify(isAdmin)}</p>
+<p>{JSON.stringify(user)}</p>
       <div style={styles.header}>
         <h1 style={styles.title}>Projects</h1>
-        {isAdmin && (
+        {/* {isAdmin && ( */}
           <button style={styles.createBtn} onClick={() => setShowModal(true)}>
             + New Project
           </button>
-        )}
+        {/* )} */}
       </div>
 
       {projects.length === 0 ? (
