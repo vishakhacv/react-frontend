@@ -92,7 +92,8 @@ export default function ProjectDetails() {
 
   const handleCheckOverdue = async () => {
     try {
-      const res = await djangoApi.post('/check-overdue/');
+      // const res = await djangoApi.post('/check-overdue/');
+      const res = await djangoApi.post('/api/check-overdue/');
       alert(res.data.message);
       fetchProject();
     } catch (err) {
